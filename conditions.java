@@ -20,5 +20,13 @@ public class conditions {
             System.out.println("-- x는 y와 같거나 작습니다.");
         }
 
+        x = 70;
+
+        if (x==y){
+            System.out.println("---- x와 y가 같습니다.");
+        }else if (x < y) {
+            System.out.println("---- x는 y보다 작습니다.");
+        }else {System.out.println("---- x는 y보다 큽니다.");
+        }
     }
 }
