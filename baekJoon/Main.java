@@ -295,25 +295,69 @@ public class Main {
 
 //1110번 더하기 사이클
 
-import java.util.Scanner; 
+//import java.util.Scanner; 
+//
+//public class Main{
+//	public static void main(String[] args){
+//		Scanner in = new Scanner(System.in);
+//
+//		int newN = in.nextInt();
+//		in.close();
+//
+//		int n = newN;
+//		int i = 0;
+//
+//		while(true){
+//			newN = (((newN/10)+(newN%10))%10) + ((newN%10)*10);
+//			i++;
+//			if(newN == n){
+//				break;
+//			}
+//		}
+//		System.out.println(i);
+//	}
+//}
+
+//import java.util.Scanner;
+//import java.util.Arrays;
+//
+//public class Main{
+//	public static void main(String[] args) {
+//		Scanner in = new Scanner(System.in);
+//
+//		int a = in.nextInt();
+//		int[] list = new int[a];
+//		for(int i = 0; i < a; i++) {
+//			list[i] = in.nextInt();
+//		}
+//		in.close();
+//		Arrays.sort(list); //오름차순으로 정렬해주는 메소드이다.
+//		System.out.print(list[0]+" "+list[a-1]);
+//	}
+//}
+
+import java.util.Scanner;
 
 public class Main{
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-
-		int newN = in.nextInt();
-		in.close();
-
-		int n = newN;
-		int i = 0;
-
-		while(true){
-			newN = (((newN/10)+(newN%10))%10) + ((newN%10)*10);
-			i++;
-			if(newN == n){
-				break;
+		int[] array = new int[9];
+		
+		for (int i = 0 ; i < 9; i++) {
+			array[i] = in.nextInt();
 			}
+		
+		in.close();
+		int a = 0, b = 0;
+		
+		for (int i = 0; i < 9; i++) {
+			if (array[i] > a) {
+				a = array[i];
+				b = i+1;
+				}
+			}
+		System.out.println(a);
+		System.out.println(b);
 		}
-		System.out.println(i);
+		
 	}
-}
