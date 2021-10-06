@@ -336,28 +336,111 @@ public class Main {
 //	}
 //}
 
-import java.util.Scanner;
+//import java.util.Scanner;
+//
+//public class Main{
+//	public static void main(String[] args) {
+//		Scanner in = new Scanner(System.in);
+//		int[] array = new int[9];
+//		
+//		for (int i = 0 ; i < 9; i++) {
+//			array[i] = in.nextInt();
+//			}
+//		
+//		in.close();
+//		int a = 0, b = 0;
+//		
+//		for (int i = 0; i < 9; i++) {
+//			if (array[i] > a) {
+//				a = array[i];
+//				b = i+1;
+//				}
+//			}
+//		System.out.println(a);
+//		System.out.println(b);
+//		}
+//		
+//	}
+
+//int to String -> Integer.toStrin(숫자) / str.charAt(i)
+//String to int -> Integer.parseInt(문자열) / String.valueOf(문자열) 
+
+//public class Main{
+//	public static void main(String[] args) {
+//		int a = 123456;
+//		String a_ = Integer.toString(a);
+//		for (int i = 0; i < a_.length(); i++) {
+//			System.out.println(a_.charAt(i));
+//	}
+//}
+//}
+
+//import java.util.Scanner;
+//
+//public class Main{
+//	public static void main(String[] args) {
+//		Scanner in = new Scanner(System.in);
+//		int mul = in.nextInt() * in.nextInt() * in.nextInt();
+//		in.close();
+//		
+//		String str = Integer.toString(mul);
+//		
+//		for (int i=0; i<10; i++) {
+//			int counter = 0;
+//			for (int j=0; j < str.length(); j++) {
+//				if (str.charAt(j) - '0' == i) {
+//					counter ++;
+//				}
+//			}
+//			System.out.println(counter);
+//		}
+//	}
+//}
+
+//import java.io.BufferedReader;
+//import java.io.IOException;
+//import java.io.InputStreamReader;
+//
+//public class Main{
+//	public static void main(String[] args) throws IOException {
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//		int[] arr = new int[10];
+//		int val = Integer.parseInt(br.readLine()) * Integer.parseInt(br.readLine()) * Integer.parseInt(br.readLine());
+//		String str = String.valueOf(val);
+//		
+//		for (int i = 0; i < str.length(); i++) {
+//			arr[(str.charAt(i) - 48)]++;
+//		}
+//		
+//		for (int v: arr) {
+//			System.out.println(v);
+//		}
+//	}
+//}
+
+//public class Main {
+//    public void sayNick(String nick) {
+//        if("fool".equals(nick)) {
+//            return;
+//        }
+//        System.out.println("당신의 별명은 "+nick+" 입니다.");
+//    }
+//
+//    public static void main(String[] args) {
+//        Main test = new Main();
+//        test.sayNick("fool");
+//        test.sayNick("genious");
+//    }
+//}
 
 public class Main{
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		int[] array = new int[9];
 		
-		for (int i = 0 ; i < 9; i++) {
-			array[i] = in.nextInt();
-			}
-		
-		in.close();
-		int a = 0, b = 0;
-		
-		for (int i = 0; i < 9; i++) {
-			if (array[i] > a) {
-				a = array[i];
-				b = i+1;
-				}
-			}
-		System.out.println(a);
-		System.out.println(b);
+		int[] arr = new int[10];
+		arr[0]++;
+		System.out.println(arr[1]);
 		}
-		
 	}
+
+
+
