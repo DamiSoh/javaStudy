@@ -433,14 +433,124 @@ public class Main {
 //    }
 //}
 
+//public class Main{
+//	public static void main(String[] args) {
+//		
+//		int[] arr = new int[10];
+//		arr[0]++;
+//		System.out.println(arr[1]);
+//		}
+//	}
+
+//import java.io.BufferedReader;
+//import java.io.IOException;
+//import java.io.InputStreamReader;
+//
+//public class Main{
+//	public static void main(String[] args) throws IOException {
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//		int[] arr = new int[10];
+//		int val = Integer.parseInt(br.readLine()) * Integer.parseInt(br.readLine()) * Integer.parseInt(br.readLine());
+//		String str = String.valueOf(val);
+//		
+//		for (int i = 0; i < str.length(); i++) {
+//			arr[(str.charAt(i) - 48)]++;
+//		}
+//		
+//		for (int v: arr) {
+//			System.out.println(v); //--> arr의 배열을 v라는 변수에 담겠다.
+//		}
+//	}}
+
+
+//import java.io.BufferedReader;
+//import java.io.InputStreamReader;
+//import java.io.IOException;
+//
+//public class Main{
+//	public static void main(String[] args) throws IOException {
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//		
+//		int[] arr = new int[10];
+//		int val = Integer.parseInt(br.readLine())*Integer.parseInt(br.readLine()) *Integer.parseInt(br.readLine());
+//		String str = Integer.toString(val);
+//		
+//		for (int i = 0; i < str.length(); i++) {
+//			arr[str.charAt(i)-'0']++;
+//		}
+//		for (int v:arr) {
+//			System.out.println(v);
+//		}
+//	}
+//}
+// 1546번 
+//import java.util.Scanner;
+//import java.util.Arrays;
+//
+//public class Main{
+//	public static void main(String[] args) {
+//		Scanner in = new Scanner(System.in);
+//		
+//		int n = in.nextInt();
+//		
+//		double[] arr = new double[n];
+//		for (int i = 0; i < n; i++) {
+//			arr[i] = in.nextInt();
+//		}
+//		
+//		in.close();
+//		
+//		Arrays.sort(arr);
+//		
+//		double max = arr[n-1];
+//
+//		double sum = 0;
+//		
+//		for (int i=0; i<n; i++) {
+//			sum += arr[i]/max*100;
+//
+//		}
+//		System.out.print(sum/arr.length);
+//		}
+//}
+//		
+	
+// 4344번 
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+
 public class Main{
 	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int times = in.nextInt();
 		
-		int[] arr = new int[10];
-		arr[0]++;
-		System.out.println(arr[1]);
+		for (int i=0; i < times; i++) {
+			
+		int N = in.nextInt();
+		double[] scores = new double[N];
+		double sum = 0;
+		
+		for (int j=0; j<N; j++) {
+			scores[j] = in.nextDouble();
+			sum += scores[j];
 		}
+	
+		double avg = sum /(double)N;
+		double high_scr = 0;
+		
+		for (double v:scores) {
+			if (v > avg) {
+				high_scr += 1;
+			}}
+//		double ans = high_scr/((double)N)*100;
+//		DecimalFormat form = new DecimalFormat("#.000"); // - System.out.printf("%.3f%%\n",(count/N)*100);
+//		System.out.println(form.format(ans) + "%" );
+		System.out.printf("%.3f%%\n", high_scr/((double)N)*100);
+			
+		}
+		in.close();
 	}
-
+}
 
 
