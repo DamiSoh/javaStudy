@@ -516,41 +516,71 @@ public class Main {
 //		
 	
 // 4344번 
-import java.text.DecimalFormat;
-import java.util.Scanner;
+// import java.text.DecimalFormat;
+// import java.util.Scanner;
 
 
-public class Main{
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		int times = in.nextInt();
+// public class Main{
+// 	public static void main(String[] args) {
+// 		Scanner in = new Scanner(System.in);
+// 		int times = in.nextInt();
 		
-		for (int i=0; i < times; i++) {
+// 		for (int i=0; i < times; i++) {
 			
-		int N = in.nextInt();
-		double[] scores = new double[N];
-		double sum = 0;
+// 		int N = in.nextInt();
+// 		double[] scores = new double[N];
+// 		double sum = 0;
 		
-		for (int j=0; j<N; j++) {
-			scores[j] = in.nextDouble();
-			sum += scores[j];
-		}
+// 		for (int j=0; j<N; j++) {
+// 			scores[j] = in.nextDouble();
+// 			sum += scores[j];
+// 		}
 	
-		double avg = sum /(double)N;
-		double high_scr = 0;
+// 		double avg = sum /(double)N;
+// 		double high_scr = 0;
 		
-		for (double v:scores) {
-			if (v > avg) {
-				high_scr += 1;
-			}}
-//		double ans = high_scr/((double)N)*100;
-//		DecimalFormat form = new DecimalFormat("#.000"); // - System.out.printf("%.3f%%\n",(count/N)*100);
-//		System.out.println(form.format(ans) + "%" );
-		System.out.printf("%.3f%%\n", high_scr/((double)N)*100);
+// 		for (double v:scores) {
+// 			if (v > avg) {
+// 				high_scr += 1;
+// 			}}
+// //		double ans = high_scr/((double)N)*100;
+// //		DecimalFormat form = new DecimalFormat("#.000"); // - System.out.printf("%.3f%%\n",(count/N)*100);
+// //		System.out.println(form.format(ans) + "%" );
+// 		System.out.printf("%.3f%%\n", high_scr/((double)N)*100);
 			
-		}
-		in.close();
+// 		}
+// 		in.close();
+// 	}
+// }
+
+//class & method 
+//HashMap과 ArrayList
+
+import java.util.HashMap;
+import java.util.ArrayList;
+
+public class Main {
+
+	public int sum(int a, int b){
+		int c = a + b;
+		return c;
+	}
+	public static void main(String[] args){
+		HashMap<String, String> map = new HashMap<String, String>() ;
+		map.put("people", "사람");
+		map.put("baseball", "야구");
+
+		ArrayList<String> arr = new ArrayList<String> ();
+		arr.add("123");
+		arr.add("456");
+
+		System.out.println(arr.get(0));
+
+		int a = 1;
+		int b = 2;
+		Main met = new Main();
+		int d = met.sum(a, b);
+		System.out.println(d);
+
 	}
 }
-
-
