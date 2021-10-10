@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            /* 1
+            block level element
+
+            h1은 페이지를 다 쓴다 
+            자동 줄바꿈 가능한
+            */
+            h1{
+                border-color: red;
+                border-width: 5px;
+                border-style: solid;
+            }
+            /* 
+            inline element
+            자기 부피만큼만 다 쓴다.
+            display:bolck or inline 프로퍼티로 변경 가능
+            */
+            a{
+                border-color: red;
+                border-width: 5px;
+                border-style: solid;
+                /* display:block; */
+            }
+
+            /* 2. 이렇게 모아서 한번에 쓸 수도 있다*/
+            h1, a {
+                border-color: red;
+                border-width: 5px;
+                border-style: solid;
+            }
+
+            /* 3. 이렇게도 한다. 순서는 중요하지 않다.*/
+            h1, a{
+                border: 5px solid red;
+                padding: 10px;
+            }
+            h1, h2 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <p>For the use of CSS on Wikipedia, see Help:Cascading Style Sheets(<a href="https://en.wikipedia.org/wiki/CSS">CSS</a>).
+        For other uses, see CSS (disambiguation).
+        Cascading Style Sheets (CSS)
+        CSS3 logo and wordmark.svg
+        Filename extension</p>
+    <h2>box model</h2>
+    <img src="boxmodel.png" width="500px" style="margin-right: auto; margin-left: auto; display: block;">
+    </body>
+</html>
