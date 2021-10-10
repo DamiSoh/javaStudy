@@ -556,31 +556,79 @@ public class Main {
 //class & method 
 //HashMap과 ArrayList
 
-import java.util.HashMap;
-import java.util.ArrayList;
+//import java.util.HashMap;
+//import java.util.ArrayList;
+//
+//public class Main {
+//
+//	public int sum(int a, int b){
+//		int c = a + b;
+//		return c;
+//	}
+//	public static void main(String[] args){
+//		HashMap<String, String> map = new HashMap<String, String>() ;
+//		map.put("people", "사람");
+//		map.put("baseball", "야구");
+//
+//		ArrayList<String> arr = new ArrayList<String> ();
+//		arr.add("123");
+//		arr.add("456");
+//
+//		System.out.println(arr.get(0));
+//
+//		int a = 1;
+//		int b = 2;
+//		Main met = new Main();
+//		int d = met.sum(a, b);
+//		System.out.println(d);
+//
+//	}
+//}
 
-public class Main {
+//public class Main{
+//	public static void main(String[] args) {
+//		int[] arr = {1,2,3,4,5};
+//		System.out.println(arr.length);
+//		
+//		int[] arr2 = new int[10];
+//		System.out.println(arr2.length);
+//	}
+//}
 
-	public int sum(int a, int b){
-		int c = a + b;
-		return c;
-	}
-	public static void main(String[] args){
-		HashMap<String, String> map = new HashMap<String, String>() ;
-		map.put("people", "사람");
-		map.put("baseball", "야구");
+//public class Main{
+//	
+//	public static void main(String[] args) {
+//		
+//		boolean[] check = new boolean[10001];
+//	
+//		
+//		for (int i=0; i <10001; i++) {
+//			int n = d(i);
+//			
+//			if(n <10001) {
+//				check[n] = true;
+//			}
+//			
+//		}
+//		
+//		for(int j=0; j<10001; j++) {
+//			if (check[j] == false) {
+//				System.out.println(j);
+//			}
+//		}
+//	}
+//		
+//	public static int d(int number) {
+//		int sum = number;
+//		
+//		while (number !=0) {
+//			sum += number%10;
+//			number /= 10;
+//		}
+//		
+//		return sum;
+//		
+//	}
+//	}
 
-		ArrayList<String> arr = new ArrayList<String> ();
-		arr.add("123");
-		arr.add("456");
 
-		System.out.println(arr.get(0));
-
-		int a = 1;
-		int b = 2;
-		Main met = new Main();
-		int d = met.sum(a, b);
-		System.out.println(d);
-
-	}
-}
