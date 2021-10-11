@@ -1,0 +1,70 @@
+
+         /*
+        {{1}}
+        [Selector(선택자)] 우선순위 id > class > tag / 같은 친구들 중에서는 뒤에 온 애들이 이긴다
+            Reason: 
+                1. id는 한번만 사용되어야 한다. (e.g. ID Card for individual)
+        {{2}}
+        id -> #클래스명
+        class -> .클래스명
+        tag -> 태그명
+        */
+
+        a {
+            color:black;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size:60px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            padding: 15px;
+            padding-bottom: 30px;
+            margin: 0;
+
+        }
+        #active{
+            color:red
+        }
+
+        .saw {
+            color:gray;
+        }
+        /* grid라는 id를 부모로 가지는 태그 ol */
+
+        #grid ol{
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0;
+            padding: 20px;
+            display:block
+        }
+
+        #grid{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+
+        #article{
+            margin-left:15px;
+        }
+        /* 800px 보다 스크린 사이즈가 작으면 == max-width:800px */
+
+        #practice{
+            border-top: solid gray 10px;
+            margin-top: 30px;
+        }
+
+        @media(max-width:800px){
+            #grid{
+                display:block;
+            }
+            #grid ol{
+                border-right:none;
+            }
+
+            h1 {
+                border-bottom: none;
+            }
+        }
