@@ -363,7 +363,7 @@ public class Main {
 //	}
 
 //int to String -> Integer.toStrin(숫자) / str.charAt(i)
-//String to int -> Integer.parseInt(문자열) / String.valueOf(문자열) 
+//String to int -> Integer.parseInt(문자열) / String.valueOf(문자열) // str.charAt(숫자) - '0'
 
 //public class Main{
 //	public static void main(String[] args) {
@@ -555,6 +555,21 @@ public class Main {
 
 //class & method 
 //HashMap과 ArrayList
+/*
+배열(Array)과 ArrayList 차이점 및 활용
+1. 배열(Array)
+배열의 크기는 한번 정하면, 크기를 변경을 할 수 없습니다.
+
+Info[ ] infoArr = new Info[5]
+배열 초기화시 메모리에 할당되어 ArrayList보다 속도가 빠릅니다.
+2. ArrayList
+ArrayList는 크기가 가변적입니다.
+저장하는 데이터 수에 따라서 크기가 변경됩니다.
+데이터 추가는 add( ), 삭제는 remover( )를 사용합니다.
+데이터 추가 삭제시 메모리를 재할당하기 때문에 속도가 배열보다 느립니다.
+
+
+출처: https://allg.tistory.com/26 [프로그래밍 해볼까] */
 
 //import java.util.HashMap;
 //import java.util.ArrayList;
@@ -631,4 +646,76 @@ public class Main {
 //	}
 //	}
 
+// import java.util.Scanner;
 
+// public class Main{
+// 	public static void main(String[] args){
+// 		Scanner in = new Scanner(System.in);
+
+// 		String a = in.next();
+//		in.close();
+// 		int b = a.charAt(0);
+// 		System.out.println(b);
+
+// 	}
+// }
+
+
+// import java.util.Scanner;
+// import java.io.IOException;
+
+// public class Main{
+// 	public static void main(String[] args) throws IOException{
+// 		int a = System.in.read();
+// 		System.out.println(a);
+// 	}
+// }
+
+/* 11720번
+long도 담을 수 없는 숫자 들어온다.
+25자리 수
+7000000000000000000000000 */
+
+
+// --- 틀린 답 --- //
+// import java.util.Scanner;
+// public class Main{
+// 	public static void main(String[] args){
+
+// 		Scanner in = new Scanner(System.in);
+
+// 		int a = in.nextInt();
+// 		long b = in.nextLong();
+
+// 		long total = 0;
+
+// 		for (int i = 0; i <a; i++){
+
+// 			total += b % 10;
+// 			b /= 10;
+// 		}
+// 		System.out.print(total);
+
+// 	}
+// }
+
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int a = in.nextInt();
+		String b = in.next();
+		in.close();
+		
+		int total = 0;
+		
+		for (int i = 0; i < a ; i++){
+
+			total += b.charAt(i) - '0';
+
+		}
+
+		System.out.print(total);
+	}
+}

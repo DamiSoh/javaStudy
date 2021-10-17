@@ -17,14 +17,16 @@ public class free {
         // System.out.println(i4);
         // System.out.println(i1);
 
-        int a = 5;
-        int b = 10;
-        int c = 15;
+        // int a = 5;
+        // int b = 10;
+        // int c = 15;
 
-        System.out.println(a>5 && b>5); // 하나만 False여도 false
-        System.out.println(a>5 || b>5); // 하나만 True여도 True
-        System.out.println(++a - 5); // 증감연산자(단항)가 산술연산자보다 우선이다.
-        System.out.println(b++ - 10); 
-        System.out.println(b);
+        // System.out.println(a>5 && b>5); // 하나만 False여도 false
+        // System.out.println(a>5 || b>5); // 하나만 True여도 True
+        // System.out.println(++a - 5); // 증감연산자(단항)가 산술연산자보다 우선이다.
+        // System.out.println(b++ - 10); 
+        // System.out.println(b);
+        // int[] arr = {1,2,3};
+        // System.out.println(sum(arr));
     }
 }
