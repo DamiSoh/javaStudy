@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- 1. event란 무엇인가-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <!-- <Script></script> 태그를 쓴다 -->
+        <script>
+            document.write('hello future');
+            document.write(1+1);
+        </script>
+        <!-- 
+            1. 글자쓰고싶을때는 value를 쓴다 --
+            2. onclick 속성 뒤에는 반드시 자바 스크립트가 와야한다
+            3. 이런 변화를 "event"라고 한다. onclick, onchange, onkeydown 등으로 할 수 있음.
+        -->
+        <input type="button" value="hi" onclick="alert('hi')">
+        <input type="text" onchange="alert('changed')">
+        <input type="text" onkeydown="alert('key down')">
+    </body>
+</html>
